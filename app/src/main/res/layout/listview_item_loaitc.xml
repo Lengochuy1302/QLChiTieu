@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_item_loaitc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avataitemtc"
+            android:layout_width="80dp"
+            android:layout_marginLeft="55dp"
+            android:layout_height="80dp"
+            android:src="@drawable/loaithuchi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_avataitemtc"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textListtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên loại"
+        android:textColor="@color/grey_dam"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

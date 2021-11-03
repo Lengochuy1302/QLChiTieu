@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:padding="5dp"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#3E4467"
+        android:gravity="center_horizontal"
+        android:id="@+id/titleTim"
+        android:text="TÌM LOẠI THU NHẬP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/tim_loai_thu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edttext"
+            android:padding="12dp"
+            android:drawableTint="#ABD2D8"
+            android:textColorHint="@color/grey_dam"
+            android:textColor="@color/grey_dam"
+            android:drawableRight="@drawable/ic_search"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập loại thu nhập cần tìm ..."
+            android:textSize="16dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/button_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/btnThemLT"
+                android:text="Tìm"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:id="@+id/xoaTextLT"
+                android:text="Hủy"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_ui"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

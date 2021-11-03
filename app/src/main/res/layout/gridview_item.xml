@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+ android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+       >
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avataitem"
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/heodathyhy" />
+            <TextView
+                android:id="@+id/textList"
+                android:layout_below="@id/img_avataitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên loại"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textColor="@color/grey_dam"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/gialist"
+                android:layout_below="@id/img_avataitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá "
+                android:textStyle="italic"
+                android:layout_centerInParent="true"
+                android:textColor="@color/grey_dam"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/ngaylist"
+                android:layout_below="@id/img_avataitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày "
+                android:textStyle="italic"
+                android:layout_centerInParent="true"
+                android:textColor="@color/grey_dam"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment1"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="center">
+<pl.droidsonroids.gif.GifImageView
+    android:layout_width="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_height="300dp"
+    android:src="@drawable/moneta_forever"/>
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUẢN LÝ CHI TIÊU BẢN THÂN"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:layout_marginTop="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dù kiếm 10 tiêu 5 hay họ kiếm 100 tiêu 90 thì cũng đủ thể hiện rõ cách mà bạn làm chủ được đồng tiền và không bị lệ thuộc vào nó"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

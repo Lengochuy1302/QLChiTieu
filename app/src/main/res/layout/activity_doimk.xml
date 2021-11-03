@@ -1,0 +1,182 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="134dp"-->
+        <!--            android:layout_marginTop="40dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:src="@drawable/logofpoly" />-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayoutchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingBottom="50dp">
+            <LinearLayout
+                android:id="@+id/logovi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="-35dp"
+                android:padding="0dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/logofpT"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/khienbaove" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="ĐỔI MẬT KHẨU"
+                android:textColor="#3E4467"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:startIconDrawable="@drawable/email"
+                app:hintEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtCUser"
+                    android:background="@drawable/background_edttext"
+                    android:padding="14dp"
+                    android:hint="Nhập Email..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/grey_dam"
+                    android:inputType="text"
+                    android:scrollHorizontally="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtUserName"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                app:startIconDrawable="@drawable/ic_key"
+                android:layout_marginTop="15dp"
+                app:passwordToggleTint="@color/grey_dam">
+
+                <EditText
+
+                    android:id="@+id/edtCPass"
+                    android:background="@drawable/background_edttext"
+                    android:hint="Nhập mật khẩu mới..."
+                    android:padding="14dp"
+                    android:textColorHint="@color/grey_dam"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword"
+                    android:scrollHorizontally="true" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtUserName"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                app:startIconDrawable="@drawable/ic_key"
+                android:layout_marginTop="15dp"
+                app:passwordToggleTint="@color/grey_dam">
+
+                <EditText
+                    android:id="@+id/edtNewPass"
+                    android:background="@drawable/background_edttext"
+                    android:hint="Nhập lại mật khẩu mới..."
+                    android:padding="14dp"
+                    android:textColorHint="@color/grey_dam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPassword"
+                    android:scrollHorizontally="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:text="XÁC NHẬN"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnRelay"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_ui"
+                    android:text="QUAY LẠI"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

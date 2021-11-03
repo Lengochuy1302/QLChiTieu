@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@tools:sample/first_names">
+
+    <!--now add some icons-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/thongke"
+            android:title="Thống kê thu chi"
+            android:icon="@drawable/ic_thong_ke_24dp"
+            />
+        <item
+            android:id="@+id/khoanthu"
+            android:title="Quản lý thu nhập"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            />
+        <item
+            android:id="@+id/khoanchi"
+            android:title="Quản lý chi tiêu"
+            android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+            />
+        <item
+            android:id="@+id/ghichu"
+            android:title="Ghi chú thu chi"
+            android:icon="@drawable/pasttt"
+            />
+
+        />
+
+    </group>
+
+    <item android:title="Các tiện ích"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/capnhat"
+                android:title="Thông tin người dùng"
+                android:icon="@drawable/ic_gioithieu"
+                />
+
+            <item
+                android:id="@+id/doimatkhau"
+                android:title="Đặt lại mật khẩu"
+                android:icon="@drawable/ic_key"
+                />
+            <item
+                android:id="@+id/intro"
+                android:title="Giới thiệu phần mềm"
+                android:icon="@drawable/baseline_dashboard_black_24dp"
+                />
+
+            <item
+                android:id="@+id/logout"
+                android:title="Đăng xuất tài khoản"
+                android:icon="@drawable/baseline_exit_to_app_black_24dp"
+                />
+        </menu>
+
+    </item>
+
+    <item android:title="Hỗ trợ"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/donggopykien"
+                android:title="Phản hồi người dùng"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                />
+            <item
+                android:id="@+id/thongtin"
+                android:title="Thông tin ứng dụng"
+                android:icon="@drawable/ic_baseline_help_24"
+                />
+            <item
+                android:id="@+id/gioithieu"
+                android:title="Cập nhật bản mới"
+                android:icon="@drawable/ic_baseline_cloud_download_24"
+                />
+            <item
+                android:id="@+id/phienban"
+                android:title="Thông tin phiên bản"
+                android:icon="@drawable/ic_baseline_error_24"
+                />
+        </menu>
+
+    </item>
+
+</menu>

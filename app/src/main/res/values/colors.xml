@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6D00</color>
+    <color name="tab_background">#00BFA5</color>
+    <color name="colorAccent">#FF9E40</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkGray">#FF548E</color>
+    <color name="Colortab">#5EA3CD</color>
+    <color name="background_draw">#00BFA5</color>
+    <color name="bacground_floating">#000000</color>
+    <color name="floating_button">#FFD600</color>
+    <color name="yellow">#FF3300</color>
+    <color name="grey">#F1F0F0</color>
+    <color name="grey2">#DDDDDD</color>
+    <color name="red">#FF0000</color>
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+    <color name="colorPurple">#2CA</color>
+    <color name="transparent">#00000000</color>
+    <color name="tim">#5000BF</color>
+    <color name="blue">#00BAED</color>
+    <color name="colorBlue">#2FB4FF</color>
+    <color name="colorPurpleT">#64983cff</color>
+    <color name="grey_dam">#595959</color>
+    <color name="do_nhat">#FF3C2D</color>
+    <color name="black">#000000</color>
+    <color name="grey_nhat">#F8F8F8</color>
+
+</resources>

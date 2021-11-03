@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".chichu.FileGhiChu">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Danh sách ghi chú"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ListView
+            android:paddingLeft="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+          />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/addnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_colorNormal="#3E4467"
+            fab:menu_colorPressed="#ABD2D8"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="#3E4467"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

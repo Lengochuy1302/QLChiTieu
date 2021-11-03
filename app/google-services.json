@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "492856506417",
+    "firebase_url": "https://lengochuyasm-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lengochuyasm",
+    "storage_bucket": "lengochuyasm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492856506417:android:81fdea224cbbedfba6fd10",
+        "android_client_info": {
+          "package_name": "com.example.assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492856506417-7co4d0k1e7lukuknknqur9ir2drk9kto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyETMqMTkR3EIP8-zNZ4N4wP-L2VoTGPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492856506417-7co4d0k1e7lukuknknqur9ir2drk9kto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

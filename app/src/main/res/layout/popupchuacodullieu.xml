@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="@drawable/background_dialog">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:src="@drawable/error_img"
+        android:layout_height="100dp"/>
+
+    <TextView
+
+        android:id="@+id/txttieude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Phần tiêu đề"
+        android:textColor="@color/grey_dam"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_below="@+id/txttieude"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Đồng ý"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

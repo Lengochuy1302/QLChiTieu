@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#3E4467"
+        android:layout_marginTop="0dp"
+        android:id="@+id/titleThemKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="THÊM KHOẢN THU"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/them_mota_gd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_edttext"
+            android:drawableRight="@drawable/ic_mota"
+            android:drawableTint="#ABD2D8"
+            android:hint="Mô tả giao dịch..."
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/grey_dam"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/them_ngay_gd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_edttext"
+            android:drawableRight="@drawable/ic_date"
+            android:drawableTint="#ABD2D8"
+            android:hint="Ngày giao dịch..."
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/grey_dam"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/them_tien_gd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_edttext"
+            android:drawableRight="@drawable/ic_money"
+            android:drawableTint="#ABD2D8"
+            android:hint="Số tiền..."
+            android:inputType="number"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/grey_dam"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/titleThemLoaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Loại khoản thu:" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_edttext"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spLoaiGd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ABD2D8"
+                android:drawableTint="@color/grey_dam"
+                android:textColor="@color/grey_dam"
+                android:textColorHint="@color/grey_dam" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_edttext"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/them_ghichu_gd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/voice_to_text"
+                android:background="#00FFFFFF"
+                android:drawableTint="#ABD2D8"
+                android:hint="Nhập ghi chú hoặc ấn giữ icon mic..."
+                android:inputType="text"
+                android:padding="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/grey_dam"
+                android:textColorHint="@color/grey_dam"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_marginTop="13dp"
+                android:id="@+id/voice_to_text"
+                android:layout_marginRight="10dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+
+                android:background="@drawable/ic_baseline_mic_24" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThemGD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="Thêm"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/xoaTextGD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui"
+                android:text="Hủy"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

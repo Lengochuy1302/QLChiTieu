@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".DangKiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/goccc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/logovi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/logofpT"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/login_chiakhoa" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logovi"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:id="@+id/noidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="ĐĂNG KÝ"
+                        android:textColor="#FF5722"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:startIconDrawable="@drawable/email"
+                        android:layout_marginTop="15dp"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/dangKi_etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Nhập Email..."
+                            android:padding="14dp"
+                            android:textColorHint="@color/grey_dam" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:hintEnabled="false"
+                        app:startIconDrawable="@drawable/ic_key"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/grey_dam">
+
+                        <EditText
+                            android:id="@+id/edtRegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Nhập mật khẩu..."
+                            android:inputType="textPassword"
+                            android:padding="14dp"
+                            android:textColorHint="@color/grey_dam" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:hintEnabled="false"
+                        app:startIconDrawable="@drawable/ic_key"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/grey_dam">
+
+                        <EditText
+                            android:id="@+id/edtRePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/background_edttextdo"
+                            android:hint="Nhập mật khẩu xác nhận..."
+                            android:inputType="textPassword"
+                            android:padding="14dp"
+                            android:textColorHint="@color/grey_dam" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/btnReg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/button_bgv"
+                            android:text="ĐĂNG KÝ"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btnRelay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_uiv"
+                            android:text="QUAY LẠI"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

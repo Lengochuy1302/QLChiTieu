@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/logofpT"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/securityapk" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THỐNG KÊ VÀ BẢO VỆ TIỀN CHO BẠN"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#04E3EC"
+        android:layout_marginTop="0dp"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Miêu tả một cách trực quan những nguồn chi tiêu bằng biểu đồ, từ đó có thể cho thấy được xu hướng tiêu dùng của bạn, đưa ra nhận định từ đó giúp bạn giới hạn chi tiêu của mình một cách hiệu quả hơn"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vientrondepv"
+        android:text="Trang chủ"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment1"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="center">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/heo"
+        android:layout_height="300dp"/>
+   <LinearLayout
+       android:paddingRight="20dp"
+       android:paddingLeft="20dp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="QUẢN LÝ THU NHẬP BẢN THÂN"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:textColor="#FB4583"
+           android:layout_marginTop="0dp"/>
+       <TextView
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nhiều người không biết cách quản lý tiền bạc thường đổ lỗi cho hoàn cảnh và cho rằng bản thân mình kiếm được quá ít tiền, vì vậy họ khiến bản thân luôn rơi vào tình thế “rỗng ví” ngày này qua ngày khác."
+           android:textSize="17dp"
+           android:textColor="@color/black"
+           android:layout_marginTop="5dp"/>
+
+   </LinearLayout>
+
+</LinearLayout>

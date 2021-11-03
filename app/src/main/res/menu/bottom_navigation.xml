@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btnthongke"
+        android:title="Thống Kê"
+        android:icon="@drawable/ic_thong_ke_24dp">
+
+    </item>
+    <item
+        android:id="@+id/btnthunhap"
+        android:title="Khoản Thu"
+        android:icon="@drawable/ic_monetization_on_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/btnchitieu"
+        android:title="Khoản Chi"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24">
+
+    </item>
+
+    <item
+        android:id="@+id/btncaidat"
+        android:title="Ghi Chú"
+        android:icon="@drawable/pasttt">
+
+    </item>
+
+
+</menu>
